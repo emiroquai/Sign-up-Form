@@ -8,6 +8,14 @@ html, body, input, h1{
     font-family: Norse-Bold;
 }
 
+a { color: inherit; } 
+
+.photo-credit {
+    color: azure;
+    font-size: 0.8em;
+    place-self: end center;
+}
+
 /* Layout */
 body {
     display: flex;
@@ -20,17 +28,17 @@ body {
 }
 
 .left-section {
-    flex-shrink: 0;
-    flex-grow: 0;
+    display: flex;
     width: clamp(0vw, 40vw, 50vw);
     height: 100vw;
+    justify-content: center;
 }
 
 .right-section {
     display: flex;
     flex-direction: column;
     width: clamp(50vw, 60vw, 100vw);
-    height: 100vw;
+    /* height: 100vw; */
     background-color: rgba(206, 103, 18, 0.803);
 }
 
@@ -49,7 +57,7 @@ form {
     flex-wrap: wrap;
     justify-content: flex-start;
     display: flex;
-    max-width: 70%;
+    max-width: 60%;
     padding-top: 30px;
 }
 
