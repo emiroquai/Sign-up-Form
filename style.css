@@ -31,21 +31,29 @@ body {
     flex-direction: column;
     width: clamp(50vw, 60vw, 100vw);
     height: 100vw;
-    padding-left: 30px;
     background-color: rgba(206, 103, 18, 0.803);
+}
+
+.hero, form {
+    padding-left: 30px;
 }
 
 form {
     display: flex;
-    max-width: 70%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 100%;
     margin-top: 10px;
-    background-color: rgba(206, 103, 18, 0.929);
-    /* margin: 30px; */
+    background-color: rgba(206, 103, 18, 0.827);
 }
 
-form > div {
+.form-fields {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: flex;
+    max-width: 70%;
+    padding-top: 30px;
+}
+
+.form-fields > div {
     display: flex;
     flex-direction: column;
     margin-right: 30px;
@@ -58,4 +66,9 @@ label {
 
 input {
     width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 30px;
 }
