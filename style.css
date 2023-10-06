@@ -93,11 +93,15 @@ form {
     display: flex;
     width: 100%;
     margin-top: 10px;
-    background-color: rgba(206, 103, 18, 0.827);
+    background-color: rgba(206, 103, 18, 0.55);
 }
 
 .hero, .form-fields {
     padding-left: 30px;
+}
+
+.hero {
+    margin-top: 80px;
 }
 
 .form-fields {
@@ -121,9 +125,14 @@ label {
 
 input {
     width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
 }
 
 button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     margin-left: 30px;
     width: 150px;
@@ -132,5 +141,70 @@ button {
     background-color: rgba(255, 111, 0, 0.986);
     border: 1px solid rgba(255, 111, 0, 0.986);
     border-radius: 7px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 151, 71, 0.971);
+}
+
+button:active {
+    background-color: rgba(255, 111, 0, 0.986);
+}
+
+/* Form stuff */
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+<!-- HTML !-->
+<button class="button-5" role="button">Button 5</button>
+
+/* CSS */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
 }
