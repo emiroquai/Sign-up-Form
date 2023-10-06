@@ -5,20 +5,24 @@
     src: local(Norse-Bold), url(Norse-Bold.otf);
 }
 
-html, body, input, h1{
+html, body, input, h1, button{
     font-family: Norse-Bold;
 }
 
 .logo-section {
     color: rgb(216, 224, 224);
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 a { color: inherit; } 
 
 .photo-credit {
     color: azure;
-    font-size: 0.5em;
+    font-size: 0.5rem;
+}
+
+button {
+    font-size: 1.5rem;
 }
 
 /* Layout */
@@ -55,7 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25%;
+    margin-top: 150px;
     height: 20%;
     width: 100%;
     background-color: rgba(37, 34, 34, 0.645);
@@ -122,4 +126,11 @@ input {
 button {
     margin-top: 10px;
     margin-left: 30px;
+    width: 150px;
+    height: 50px;
+    color: azure;
+    background-color: rgba(255, 111, 0, 0.986);
+    border: 1px solid rgba(255, 111, 0, 0.986);
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
