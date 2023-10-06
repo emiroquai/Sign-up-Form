@@ -23,8 +23,8 @@
             <h1>Colonize Mars, humanity's new home</h1>
             <h2>Let's build the new world!</h1>
         </div>
-        <div class="form-section">
-            <form>
+        <form>
+            <div class="form-section-1">
                 <div class="form-fields">
                     <div class="form-name">
                         <label for="name">NAME</label>
@@ -48,12 +48,12 @@
                     </div>
                     <div>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" required>
+                        <input type="password" id="confirm-password" minlength="8" required>
                     </div>
                 </div>
-            </form>
-            <button type="submit" class="submit-button">Sign-up</button>
-        </div>
+            </div>
+            <div class="form-section-2"><button type="submit" class="submit-button">Sign-up</button></div>
+        </form>
     </div>
 </body>
 </html>
