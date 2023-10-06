@@ -5,13 +5,14 @@
     src: local(Norse-Bold), url(Norse-Bold.otf);
 }
 
-html, body, input, h1, button{
-    font-family: Norse-Bold;
+html, body, input, h1 {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .logo-section {
     color: rgb(216, 224, 224);
     font-size: 2.5rem;
+    font-family: 'Norse-Bold';
 }
 
 a { color: inherit; } 
@@ -21,7 +22,12 @@ a { color: inherit; }
     font-size: 0.5rem;
 }
 
+.form-fields {
+    color: rgb(42, 42, 42);
+}
+
 button {
+    font-family: 'Norse-Bold';
     font-size: 1.5rem;
 }
 
@@ -108,6 +114,7 @@ body {
 
 .form-section-1 {
     background-color: rgba(206, 103, 18, 0.55);
+
 }
 
 .form-fields > div {
